@@ -1,8 +1,16 @@
-.page{
-    background-color: mediumslateblue;
+.page-position{
+    background-color:rgb(25,90,75);
+    width:100%;
+    height: 100%;
 }
 
-.content-frame{
-    margin-left: 10%;
-    margin-right: 10%;
+.content-position{
+    background-color: linen; 
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border-radius: 2%;
+    height: 600px;
+    width: 96%;
 }
