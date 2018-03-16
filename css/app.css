@@ -31,3 +31,8 @@
 .fa3{
     color: green;
 }
+
+.vertical-line{
+    width: 1px;
+    height: 500px;
+}
