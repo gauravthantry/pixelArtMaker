@@ -5,7 +5,8 @@
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
-		  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link rel="stylesheet" href="css/app.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <script src="js/app.js"></script>
@@ -19,10 +20,16 @@
         <hr>
         <section>
             <section class="row-fluid">
-                <section class="col-xs-4">
+                <section class="col-md-3">
                     <section class="row-fluid">
                         <section class="col-xs-6">
-
+                            <section class="well color-option-container">
+                                <form class="color-select">
+                                   <input type="radio" name="blue" value="blue" checked><i class="fa fa-fire-extinguisher fa1"></i> &nbsp; BLUE<br>
+                                   <input type="radio" name="yellow" value="yellow"><i class="fa fa-fire-extinguisher fa2"></i> &nbsp; YELLOW<br>
+                                   <input type="radio" name="green" value="green"><i class="fa fa-fire-extinguisher fa3"></i> &nbsp; GREEN
+                                </form>
+                            </section>  
                         </section>
                         <section class="col-xs-6">
 
@@ -30,7 +37,7 @@
                     </section>
                 </section>
                 <hr class="vertical-line">
-                <section class="col-xs-8">
+                <section class="col-md-8">
 
                 </section>
             </section> 
