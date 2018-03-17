@@ -14,6 +14,7 @@
     border-radius: 2%;
     height: 600px;
     width: 96%;
+	position: absolute;
 }
 
 .heading{
@@ -33,13 +34,15 @@
 }
 
 .vertical-line{
-    width: 1px;
-    height: 500px;
+    border-left: 1px solid white;
+    height: 478px;
+	margin-left: 30px;
 }
 
 .color-option-container{
     width: 300px;
     background-color: rgba(255,255,255,0.4);
+	
 }
 
 .color-select{
@@ -50,6 +53,7 @@
 .grid-size-container{
     background-color: rgba(255,255,255,0.4);
     width: 300px;
+	
 }
 
 .text-line{
@@ -68,3 +72,14 @@
     float: center;
     margin-left: 20px;
 }
+
+.drawing-area{
+    text-align:center;
+	padding: 210px 0;
+}
+
+.btn-size{
+	text-align: center;
+width: 60px;
+}
+
