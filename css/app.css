@@ -74,12 +74,28 @@
 }
 
 .drawing-area{
-    text-align:center;
-	padding: 210px 0;
+    line-height: 0;
+    font-size: 0;
+	text-align: center;
+	margin: auto;
 }
 
 .btn-size{
 	text-align: center;
 width: 60px;
 }
+
+.colorFill-Blue{
+	background-color: blue;
+}
+.colorFill-Green{
+	background-color: green;
+}
+
+.colorFill-Yellow{
+	background-color: yellow;
+}
+
+
+
 
