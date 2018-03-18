@@ -15,10 +15,15 @@ $(document).ready(function() {
                     var colClassName = 'col' + j;
                     $('<td width="30px" height="30px" style="border: 1px solid #000; ">').addClass(colClassName).appendTo(tr);
                 }
+				$('.drawing-area').append('</tr>');
 
             }
+			$('.drawing-area').css('visibility','visible').hide().fadeIn('slow');
+			
+			
+
 			}
-			else{
+			else if((rows>=8 && rows<=20) && (cols>=8 && cols <=50)){
             for (var i = 1; i <= rows; i++) {
                 var rowClassName = 'row' + i;
                 var tr = $('<tr>').addClass(rowClassName);
@@ -30,8 +35,13 @@ $(document).ready(function() {
                 }
 
             }
+			$('.drawing-area').css('visibility','visible').hide().fadeIn('slow');
 				
 				
+			}
+			else if(rows>20 || cols>50)
+			{
+				alert('Bamm!!! Your input will flood the browser\'s belly');
 			}
         } else {
             alert("You haven't provided the grid size!");

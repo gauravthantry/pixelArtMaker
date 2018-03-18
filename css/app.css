@@ -76,6 +76,7 @@
 
 .drawing-area{
     text-align: center;
+	visibility: hidden;
 }
 
 .btn-size{
@@ -94,6 +95,11 @@ width: 60px;
 	background-color: yellow;
 }
 
+.rowClassName{
+	visibility: hidden;
+}
 
+.colClassName{
+	visibili
 
 
