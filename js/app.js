@@ -1,24 +1,43 @@
-$(document).ready(function(){
-   $("#grid-input").click(function(){
-	   $(".drawing-area").empty();
-	   
-      var rows = $("#row").val();
-      var cols = $("#col").val();
-	  if(rows>0 && cols > 0){
-      for(var i=1;i<=rows;i++){
-          for(var j=1;j<=cols;j++){
-              $(".drawing-area").append('<td id="myPixel" width="20px" height="20px" style="border: 1px solid #000;"></td>');
-          }
-   	   $(".drawing-area").append('<br/>');
-      }
-	  }
-	  else{
-		  alert("You haven't provided the grid size!");
-	  }
-   });
-   var color=  $("input[name='color']:checked").val();
-   console.log(color);
- $("td").click(function(){
+$(document).ready(function() {
+    $("#grid-input").click(function() {
+        $(".drawing-area").empty();
+
+        var rows = $("#row").val();
+        var cols = $("#col").val();
+        if (rows > 0 && cols > 0) {
+			if(rows<8 || cols<8){
+            for (var i = 1; i <= rows; i++) {
+                var rowClassName = 'row' + i;
+                var tr = $('<tr>').addClass(rowClassName);
+                tr.appendTo('.drawing-area'); //Adding dynamic class names whenever a new table row is created
+
+                for (var j = 1; j <= cols; j++) {
+                    var colClassName = 'col' + j;
+                    $('<td width="30px" height="30px" style="border: 1px solid #000; ">').addClass(colClassName).appendTo(tr);
+                }
+
+            }
+			}
+			else{
+            for (var i = 1; i <= rows; i++) {
+                var rowClassName = 'row' + i;
+                var tr = $('<tr>').addClass(rowClassName);
+                tr.appendTo('.drawing-area'); //Adding dynamic class names whenever a new table row is created
+
+                for (var j = 1; j <= cols; j++) {
+                    var colClassName = 'col' + j;
+                    $('<td width="20px" height="20px" style="border: 1px solid #000; text-align: center;">').addClass(colClassName).appendTo(tr);
+                }
+
+            }
+				
+				
+			}
+        } else {
+            alert("You haven't provided the grid size!");
+        }
+    });
+$('td').click(function(){
  var color=  $("input[name='color']:checked").val();
  if(color==='blue')
  {
@@ -26,13 +45,15 @@ $(document).ready(function(){
 		 $(this).removeClass('colorFill-Blue');
 	  else
 		  $(this).addClass('colorFill-Blue');
+	  
  }
- else if(color==='Ggreen')
+ else if(color==='green')
  {
-	 if($(this).hasClass('colorFill-Green'))
+	/* if($(this).hasClass('colorFill-Green'))
 		 $(this).removeClass('colorFill-Green');
 	 else
-		 $(this).addClass('colorFill-Green');
+		 $(this).addClass('colorFill-Green'); */
+	 alert("green is selected");
  }
  else{
 	 if($(this).hasClass('colorFill-Yellow'))

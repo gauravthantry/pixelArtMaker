@@ -52,7 +52,8 @@
 
 .grid-size-container{
     background-color: rgba(255,255,255,0.4);
-    width: 300px;
+	width: 300px;
+    
 	
 }
 
@@ -74,10 +75,7 @@
 }
 
 .drawing-area{
-    line-height: 0;
-    font-size: 0;
-	text-align: center;
-	margin: auto;
+    text-align: center;
 }
 
 .btn-size{
