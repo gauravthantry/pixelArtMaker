@@ -4,6 +4,12 @@
     height: 100%;
     
 }
+.wrapper {
+	margin-left: auto;
+	margin-right: auto;
+	min-width: 1920px !important;
+	
+}
 
 .content-position{
     background-color: rgba(255,255,255,0.6); 
@@ -40,19 +46,17 @@
 }
 
 .color-option-container{
-    width: 300px;
+    
     background-color: rgba(255,255,255,0.4);
+	text-align: left;
 	
 }
 
-.color-select{
 
-    
-}
 
 .grid-size-container{
     background-color: rgba(255,255,255,0.4);
-	width: 300px;
+	
     
 	
 }
@@ -95,11 +99,5 @@ width: 60px;
 	background-color: yellow;
 }
 
-.rowClassName{
-	visibility: hidden;
-}
-
-.colClassName{
-	visibili
 
 
