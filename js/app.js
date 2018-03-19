@@ -5,7 +5,7 @@ $(document).ready(function() {
         var rows = $("#row").val();
         var cols = $("#col").val();
         if (rows > 0 && cols > 0) {
-            if (rows < 10 && cols < 20) {
+            if (rows < 10 && cols < 20) {   /* Bigger squares will look good if the grid size is small */
                 for (var i = 1; i <= rows; i++) {
                     var rowClassName = 'row' + i;
                     var tr = $('<tr>').addClass(rowClassName);
@@ -54,7 +54,7 @@ $(document).ready(function() {
 
 
             } 
-			else if (rows >= 20 || cols > 50) {
+			else if (rows >= 20 || cols > 50) {  /* Any input more than this size would exceed the browser size */
                 alert('Bamm!!! Your input will flood the browser\'s belly. Feed no more than 19 rows and 50 columns');
             }
         } else {
@@ -63,7 +63,7 @@ $(document).ready(function() {
     });
     $('body').on("click","td",function() {
         var color = $("input[name='color']:checked").val();
-        if (color === 'blue') {
+        if (color === 'blue') {         
             if ($(this).hasClass('colorFill-Blue'))
                 $(this).removeClass('colorFill-Blue');
 			
