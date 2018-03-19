@@ -49,17 +49,36 @@ $(document).ready(function() {
         if (color === 'blue') {
             if ($(this).hasClass('colorFill-Blue'))
                 $(this).removeClass('colorFill-Blue');
+			
+			else  if ($(this).hasClass('colorFill-Green'))
+                $(this).removeClass('colorFill-Green');
+			
+			else if ($(this).hasClass('colorFill-Yellow'))
+                $(this).removeClass('colorFill-Yellow');
+			
             else
                 $(this).addClass('colorFill-Blue');
 
         } else if (color === 'green') {
-            if ($(this).hasClass('colorFill-Green'))
+            if ($(this).hasClass('colorFill-Blue'))
+                $(this).removeClass('colorFill-Blue');
+			
+			else  if ($(this).hasClass('colorFill-Green'))
                 $(this).removeClass('colorFill-Green');
+			
+			else if ($(this).hasClass('colorFill-Yellow'))
+                $(this).removeClass('colorFill-Yellow');
             else
                 $(this).addClass('colorFill-Green');
             alert("green is selected");
         } else {
-            if ($(this).hasClass('colorFill-Yellow'))
+            if ($(this).hasClass('colorFill-Blue'))
+                $(this).removeClass('colorFill-Blue');
+			
+			else  if ($(this).hasClass('colorFill-Green'))
+                $(this).removeClass('colorFill-Green');
+			
+			else if ($(this).hasClass('colorFill-Yellow'))
                 $(this).removeClass('colorFill-Yellow');
             else
                 $(this).addClass('colorFill-Yellow');
