@@ -1,11 +1,6 @@
 body{
     background-image: url("https://i.pinimg.com/originals/f8/03/50/f8035042eda4eaeac4013e4f79ed85b2.jpg");
-	/*min-width: 1920px;
-	text-align: center;
-	margin: 0 auto; */
-
-	
-    
+     /* Require review: Removed the commented code */
 } 
 .wrapper {
 	position: absolute;
